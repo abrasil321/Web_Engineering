@@ -1,0 +1,10 @@
+Mexico City     -    8,589,600<br>
+Guadalajara     -    1,797,600<br>
+Ecatepec        -    1,688,600<br>
+Nezahualcoyotl   -   1,480,800<br>
+Puebla       -       1,308,700<br>
+Monterrey     -      1,236,900<br>
+Tijuana       -      1,182,900<br>
+Ciudad Juarez    -   1,126,700<br>
+Leon          -        994,700<br>
+Naucalpan       -      953,800<br>

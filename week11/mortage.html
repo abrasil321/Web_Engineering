@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" type="text/css" href="mortage.css">
+</head>
+<body>
+    <header>Mortgage Calculator</header>
+    <hr>
+    <div class="propaganda">Making your dreams become true with just a click</div>
+    <hr>
+    <div class="primeiro"></div>
+    <div class="segundo">
+        <form action="mortgage.php" method="GET">
+            Enter the APR (Annual Percentage Rate): <input type="number" id="apr" name="apr" min="0" max="25.00" step="0.01" onc\
+hange="calc()" required>%<br>
+            Enter the Loan Term (in years): <input type="number" id="term" name="term" min="0" max="40" onchange="calc()" requir\
+ed>Years<br>
+            Enter the Loan Amount (in dollars): <input type="number" id="amount" name="amount" min="0" onchange="calc()" require\
+d>$<br>
+            <input type="reset" id="clear" name="clear" value="Clear">
+            <button type="submit" id="calculate" name="calculate" onclick="calc()">Calculate</button><br>
+        </form>
+    </div>
+    <hr>
+    <footer>
+        <pre>        <b>Contact</b>
+
+      Main Street
+      Rexburg - ID
+     (208) 201-0000
+mortgage@calculator.byui</pre>
+    </footer>
+
+</body>
+</html>

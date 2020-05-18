@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assign10.js"></script>
+    <title>Mileage Calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Mileage Calculator</h1>
+    </header>
+    <hr>
+    <form>
+        <h2>Enter the requested information</h2>
+        Start City<input type="text" id="sCity" name="startCity" required><br>
+        Start State<input type="text" id="sState" name="startState" maxlength="2" required><br>
+        Destination City<input type="text" id="dCity" name="endCity" required><br>
+        Destination State<input type="text" id="dState" name="endState"  maxlength="2" requided><br>
+        <br>
+        <button type="button" onclick="doSearch()">Calculate</button>
+        <button type="reset">Reset</button>
+        <hr>
+        <p id="display"></p>
+
+    </form>
+    
+</body>
+</html>

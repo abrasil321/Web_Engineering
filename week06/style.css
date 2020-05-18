@@ -1,0 +1,193 @@
+header
+{
+    background-image: url("campus.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1%;
+    color: rgb(12, 20, 94);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body
+{   
+    font-family: cursive;
+    background-color: rgba(233, 233, 233, 0.945);
+}
+
+.img0
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding-top: 1%;
+}
+
+.cont1
+{
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff70;
+}
+
+.tex 
+{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0%;
+}
+
+.tex9 
+{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0%;
+}
+
+.grid-container 
+{
+    display: grid;
+    grid-gap: 1%;
+    padding: 1%;
+}
+
+.grid-item 
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 1%;
+    font-size: 1.5em;
+}
+
+.item1 
+{
+    grid-column: 1;
+    grid-row: 1 / span 8;
+}
+  
+.item2 
+{
+    height: auto;
+    width: 98%;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 8;
+    background-image: url("image1.jpg");
+    background-repeat: round;
+    padding-top: 1%;
+}
+
+.item21
+{
+    height: auto;
+    width: 98%;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 8;
+    background-image: url("univ.jpg");
+    background-repeat: round;
+    padding-top: 1%;
+}
+
+.item22 
+{
+    height: auto;
+    width: 98%;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 8;
+    background-image: url("acad.jpg");
+    background-repeat: round;
+    padding-top: 1%;
+}
+
+.item23 
+{
+    height: auto;
+    width: 98%;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 8;
+    background-image: url("athl.jpg");
+    background-repeat: round;
+    padding-top: 1%;
+}
+
+.item24 
+{
+    height: auto;
+    width: 98%;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 8;
+    background-image: url("art.jpg");
+    background-repeat: round;
+    padding-top: 1%;
+}
+  
+.item3 
+{
+    grid-column: 1 / span 4;
+    grid-row: 9;
+}
+
+hr, h6, h5, h4, h3{ margin: 1%; }
+
+h3{ margin: 0%; }
+
+span{ background-color: #dddddd; }
+
+body{ background-image: url("image3.jpg");}
+
+.dois
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 700px)
+{
+    .img0{ width: 40%; }
+
+    img
+    {
+        width: 60%;
+        height: 50%;
+    }
+
+    .cont1{ font-size: 1em; }
+
+    .grid-container 
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .grid-item 
+    {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 1%;
+        font-size: 1em;
+    }
+
+    .dois
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    h2{ font-size: large; }
+    h3{ font-size: medium;}
+    h4{ font-size: small;}
+    h5{ font-size: smaller;}
+}

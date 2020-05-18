@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="week8.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Protein's House</title>
+        <style>
+            img {
+                width: 80%;
+                height: auto;
+                border-radius: 4em;
+                margin: auto;
+            }
+
+            img.two {
+                width: 80%;
+                height: auto;
+                border-radius: 4em;
+                margin: auto;
+            }
+
+            pre.one {
+                font-size: medium;
+                color: white;
+                font-family: fantasy;
+                font-weight: bolder;
+                background-image: linear-gradient(to right, black, rgb(41, 80, 197));
+                border-radius: 80px;
+            }
+
+            div.two {
+                background-image: url("image1.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                height: 35vh;
+                width: 100%;
+
+            }
+
+            div.five {
+                background-image: url("image4.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                height: 40vh;
+                width: 100%;
+            }
+
+            div.three {
+                background-image: url("image2.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                height: 40vh;
+                width: 100%;
+            }
+
+            div.four {
+                background-image: url("image3.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                height: 40vh;
+                width: 100%;
+            }
+
+            @media only screen and (max-width: 600px) {
+
+                img,
+                img.two {
+                    width: 45%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header><i>Protein's House</i></header>
+        <div id="menu">
+            <a href="#myanchor1" title="my1">Contact Us</a>
+        </div>
+        <hr>
+        <div class="one">We have all the protein that you have been dreaming about </div>
+        <hr>
+        <div class="two"> </div>
+        <p class="prot"><i><span>Whey Protein</span></i></p>
+        <p class="prot2">Whey protein is the protein contained in whey, the watery portion of milk
+            that separates from the curds when making cheese.</p>
+        <div class="disp">
+            <div>
+                <img src="whey1.jpg" alt="picture 1">
+                <div class="card">
+                    <h2>$32.99 </h2>
+                </div>
+            </div>
+            <div>
+                <img class="two" src="whey2.jpg" alt="picture 2">
+                <div class="card">
+                    <h2>$29.45 </h2>
+                </div>
+            </div>
+            <div>
+                <img class="three" src="whey3.jpg" alt="picture 3">
+                <div class="card">
+                    <h2>$30.92 </h2>
+                </div>
+            </div>
+            <div>
+                <img class="four" src="whey4.jpg" alt="picture 4">
+                <div class="card">
+                    <h2>$29.55 </h2>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="three"></div>
+        <p class="prot"><i><span>Whey Protein Isolate</span></i></p>
+        <p class="prot2">Whey protein isolate undergoes more processing than the common whey protein,
+            which results in a higher protein content with less carbs, lactose and fat.</p>
+        <div class="disp">
+            <div>
+                <img src="whey5.jpg" alt="picture 1">
+                <div class="card">
+                    <h2>$33.49 </h2>
+                </div>
+            </div>
+            <div>
+                <img class="two" src="whey6.jpg" alt="picture 2">
+                <div class="card">
+                    <h2>$31.15 </h2>
+                </div>
+            </div>
+            <div>
+                <img class="three" src="whey7.jpg" alt="picture 3">
+                <div class="card">
+                    <h2>$35.12 </h2>
+                </div>
+            </div>
+            <div>
+                <img class="four" src="whey8.jpg" alt="picture 4">
+                <div class="card">
+                    <h2>$32.85 </h2>
+                </div>
+            </div>
+        </div>
+        <div class="four"></div>
+        <p class="prot"><i><span>Protein Hydrolyzed</span></i></p>
+        <p class="prot2">Whey protein hydrolyzed is the whey protein broken down in smaller pieces
+            to make the digestion process faster than the usual.</p>
+        <div class="disp">
+            <div>
+                <img src="whey9.jpg" alt="picture 1">
+                <div class="card">
+                    <h2>$38.00 </h2>
+                </div>
+            </div>
+            <div>
+                <img class="two" src="whey10.jpg" alt="picture 2">
+                <div class="card">
+                    <h2>$39.35 </h2>
+                </div>
+            </div>
+            <div>
+                <img class="three" src="whey11.jpg" alt="picture 3">
+                <div class="card">
+                    <h2>$25.90 </h2>
+                </div>
+            </div>
+            <div>
+                <img class="four" src="whey12.jpg" alt="picture 4">
+                <div class="card">
+                    <h2>$38.90 </h2>
+                </div>
+            </div>
+        </div>
+        <div class="five"></div>
+        <br>
+        <hr>
+        <form>
+            <b>First Name</b><input id="inputFirst" type="text" name="first_name" placeholder="Alex" required><br>
+            <b>Last Name</b><input id="inputLast" type="text" name="last_name" placeholder="Brasil" required><br>
+            <b>Address</b><textarea id="inputAddress" name="address"
+                placeholder="Street Address, City, State, and Zip Code" required></textarea><br>
+            <b>Phone Number</b><input name="phone" id="fone1" type="tel" pattern="[0-9]{3}" placeholder="###" required>
+            <input name="phone" type="tel" id="fone2" pattern="[0-9]{3}" placeholder="###" required>
+            <input name="phone" type="tel" id="fone3" pattern="[0-9]{4}" placeholder="####" required><br>
+            <p id="tam">Select Product</p>
+            <p><b>Whey Protein</b></p>
+            <div>
+                <div>
+                    <label>Option #1</label>
+                    <input type="checkbox" name="item_11" id="item_11" onchange="theTotal()">
+                    <select id="quantity11" name="quantity11" onchange="theTotal()">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Option #2</label>
+                    <input type="checkbox" name="item_12" id="item_12" onchange="theTotal()">
+                    <select id="quantity12" name="quantity12" onchange="theTotal()">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Option #3</label>
+                    <input type="checkbox" name="item_13" id="item_13" onchange="theTotal()">
+                    <select id="quantity13" name="quantity13" onchange="theTotal()">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Option #4</label>
+                    <input type="checkbox" name="item_14" id="item_14" onchange="theTotal()">
+                    <select id="quantity14" name="quantity14" onchange="theTotal()">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <p><b>Whey Protein Isolated</b></p>
+            <div>
+                <div>
+                    <label>Option #1</label>
+                    <input type="checkbox" name="item_21" id="item_21" onchange="theTotal()">
+                    <select id="quantity21" name="quantity21" onchange="theTotal()">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Option #2</label>
+                    <input type="checkbox" name="item_22" id="item_22" onchange="theTotal()">
+                    <select id="quantity22" name="quantity22" onchange="theTotal()">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Option #3</label>
+                    <input type="checkbox" name="item_23" id="item_23" onchange="theTotal()">
+                    <select id="quantity23" name="quantity23" onchange="theTotal()">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Option #4</label>
+                    <input type="checkbox" name="item_24" id="item_24" onchange="theTotal()">
+                    <select id="quantity24" name="quantity24" onchange="theTotal()">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <p><b>Whey Protein Hydrolyzed</b></p>
+            <div>
+                <div>
+                    <label>Option #1</label>
+                    <input type="checkbox" name="item_31" id="item_31" onchange="theTotal()">
+                    <select id="quantity31" name="quantity31" onchange="theTotal()">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Option #2</label>
+                    <input type="checkbox" name="item_32" id="item_32" onchange="theTotal()">
+                    <select id="quantity32" name="quantity32" onchange="theTotal()">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Option #3</label>
+                    <input type="checkbox" name="item_33" id="item_33" onchange="theTotal()">
+                    <select id="quantity33" name="quantity33" onchange="theTotal()">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Option #4</label>
+                    <input type="checkbox" name="item_34" id="item_34" onchange="theTotal()">
+                    <select id="quantity34" name="quantity34" onchange="theTotal()">
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <b>Total</b><input type="text" name="total" id="total" placeholder="000.00" readonly>$
+            <br>
+            <p><b>Payment (Credit Card Only)</b></p>
+            <b>Credit Card Type</b><br>
+            Visa<input type="radio" name="card" id="card">
+            MasterCard<input type="radio" name="card">
+            <b>American Express</b><input type="radio" name="card"><br>
+            <b>Credit Card Number</b><input name="credit_card" id="cred1" type="tel" pattern="[0-9]{4}"
+                placeholder="####" required>
+            <input name="credit_card" id="cred2" type="tel" pattern="[0-9]{4}" placeholder="####" required>
+            <input name="credit_card" id="cred3" type="tel" pattern="[0-9]{4}" placeholder="####" required>
+            <input name="credit_card" id="cred4" type="tel" pattern="[0-9]{4}" placeholder="####" required><br>
+            <b>Expiration date</b><input name="exp_date" id="exp1" type="number" min="1" max="12" placeholder="##"
+                required>/
+            <input name="exp_date" id="exp2" type="number" min="2020" max="2099" placeholder="####" required><br>
+            <button type="reset" name="reset" onclick="getFocus()">Reset</button>
+            <button type="submit" onsubmit="empty()" name="validate">Submit</button>
+        </form>
+        <hr>
+        <footer>
+            <table>
+                <tr>
+                    <th>Contact</th>
+                    <th></th>
+                    <th>Sponsors</th>
+                </tr>
+                <tr>
+                    <td>(208) 201-0531</td>
+                    <td>-----------------------------------------------</td>
+                    <td>Universal Nutrition</td>
+                </tr>
+                <tr>
+                    <td>proteinhouse@gym.com</td>
+                    <td>-----------------------------------------------</td>
+                    <td>Integral Medicine</td>
+                </tr>
+                <tr>
+                    <td>000 Main Street, Rexburg </td>
+                    <td>-----------------------------------------------</td>
+                    <td>Growth Supplements</td>
+                </tr>
+                <tr>
+                    <td>Idaho - 83000</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table><a id="myanchor1"></a>
+        </footer>
+    </body>
+
+</html>

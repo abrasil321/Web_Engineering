@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Music Festival 2020</title>
+        <link rel="stylesheet" type="text/css" href="assign13.css">
+        <script src="assign13.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>The Music Festival 2020</h1>
+        </header>
+        <hr>
+        <div class="this">
+            <form action="assign13.php" method="POST" id="myform">
+                <label>Performance Type</label>
+                <select id="performance" name="performance" onchange="duet()" required>
+                    <option></option>
+                    <option value="Solo">Solo</option>
+                    <option value="Duet">Duet</option>
+                    <option value="Concerto">Concerto</option>
+                </select>
+                <script>
+                    function secondStudent() {
+                        var display = "\nFirst " + "Name<br><input " + "type=text " + "id=first_name_2 " + "name=first_name_2 " + "required>";
+                        var display1 = "<br>Last " + "Name<br><input " + "type=text " + "id=last_name_2 " + "name=last_name_2 " + "required>";
+                        var display2 = "<br>Student " + "Id<br><input " + "type=number " + "id=student_id_2 " + "name=student_id_2 " + "required><br>";
+                        return display + display1 + display2;
+                    }
+
+                    function duet() {
+                        var display = secondStudent();
+                        var itIs = document.getElementById("performance").value;
+                        if (itIs == "Duet") {
+                            document.getElementById("second").innerHTML = display;
+                        }
+                        else {
+                            document.getElementById("second").innerHTML = "";
+                        }
+                    }
+                </script>
+                <br>
+                First Name<input type="text" id="first_name" name="first_name" required>
+                Last Name <input type="text" id="last_name" name="last_name" required>
+                Student Id <input type="number" id="student_id" name="student_id" required>
+                <p id="second"></p>
+                <label>Skill Level</label>
+                <select id="skill" name="skill" required>
+                    <option></option>
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Pre-advanced">Pre-Advanced</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+                <label>Instrument</label>
+                <select id="instrument" name="instrument" required>
+                    <option></option>
+                    <option value="Piano">Piano</option>
+                    <option value="Voice">Voice</option>
+                    <option value="String">String</option>
+                    <option value="Organ">Organ</option>
+                    <option value="Other">Other</option>
+                </select>
+                Location<input type="text" id="location" name="location" placeholder="Campus Building Name" required>
+                Room's Number<input type="number" id="room" name="room" required>
+                Time Slot<input type="text" id="time_slot" name="time_slot" placeholder="0:00am" required>
+                <br>
+                <Button type="submit" onclick="theSubmit()" id="register" name="register">Register</Button>
+                <Button type="reset" onclick="getFocus()" id="clear" name="clear">Clear</Button>
+                <br>
+                <p id="display"></p>
+                <p id="display2"></p>
+                <p id="display3"></p>
+            </form>
+            <script>
+                $(document).ready(function () {
+                    $("#register").click(function () {
+                        $("#display").html("Performance Type: " + document.getElementById("performance").value + "<br><br>"
+                            + "Student Name: " + document.getElementById("first_name").value + " "
+                            + document.getElementById("last_name").value + "<br>"
+                            + "Student Id: " + document.getElementById("student_id").value + "<br>"
+                        );
+                    });
+                });
+
+                $(document).ready(function () {
+                    $("#register").click(function () {
+                        $("#display3").html("Skill Level: " + document.getElementById("skill").value + "<br>"
+                            + "Instrument: " + document.getElementById("instrument").value + "<br>"
+                            + "Location: " + document.getElementById("location").value + "<br>"
+                            + "Room's Number: " + document.getElementById("room").value + "<br>"
+                            + "Time Slot: " + document.getElementById("time_slot").value + "<br>"
+                        );
+                    });
+                });
+
+                $(document).ready(function () {
+                    $("#register").click(function () {
+                        $("#display2").html("Second Student Name: " + document.getElementById("first_name_2").value + " "
+                            + document.getElementById("last_name_2").value + "<br>"
+                            + "Second Student Id: " + document.getElementById("student_id_2").value + "<br>"
+                        );
+                    });
+                });
+            </script>
+            
+        </div>
+    </body>
+
+</html>

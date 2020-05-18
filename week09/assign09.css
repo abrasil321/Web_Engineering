@@ -1,0 +1,38 @@
+header{
+    background-color: cornflowerblue;
+    font-family: cursive;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-image: url("image1.jpg");
+    font-family: monospace;
+    font-size: large;
+}
+form{
+    width: 98%;
+    background-color: #554c8a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 2%;
+    margin: 1%;
+}
+input{
+    border-radius: 10%;
+    border-color: lightcoral;
+}
+button{
+    border-radius: 15%;
+}
+
+@media only screen and (max-width: 750px){
+    header{
+        font-size: medium;
+    }
+    body{
+        font-size: small;
+    }
+}

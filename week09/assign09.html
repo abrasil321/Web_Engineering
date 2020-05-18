@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Countries</title>
+    <link rel="stylesheet" type="text/css" href="assign09.css">
+    <script src="assign09.js"></script>
+</head>
+<body>
+    <header>
+        <h2>This page will use AJAX and JSON features.</h2>
+    </header>
+    <hr>
+    <form>
+        <h4>The first section will display the 10 largest 
+            cities and their population.</h4>
+        Choose the country:
+        <select id="ctry">
+            <option>Canada</option>
+            <option>Mexico</option>
+            <option>Russia</option>
+            <option>USA</option>
+        </select>
+        <button type="button" onclick="loadCountry()">Display</button>
+        <br>
+        <p id="info"></p>
+        <hr>
+        <h4>The second section will display some students' information</h4>
+        Enter the file's name:<input type="text" id="file" placeholder="file's name" required>("json" or "json1")<br>
+        <button type="button" onclick="loadStudent()">Display</button>
+        <br>
+        <p id="info2"></p>
+    </form>
+    
+</body>
+</html>
